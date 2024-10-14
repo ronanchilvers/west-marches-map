@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded",function(){
       });
     }
     L.control.Legend({
-      position: "topright",
+      position: "topleft",
       title: "Marker Legend",
       legends: legends,
       symbolWidth: 35,
