@@ -51,6 +51,7 @@ document.addEventListener("DOMContentLoaded",function(){
       symbolWidth: 35,
       symbolHeight: 41,
       opacity: 0.75,
+      collapsed: true,
     }).addTo(map);
 
     //Coordinate Finder
