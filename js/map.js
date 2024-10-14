@@ -35,13 +35,13 @@ document.addEventListener("DOMContentLoaded",function(){
     }).addTo(map);
 
     //Coordinate Finder
-    let marker = L.marker([-50, 50], {
-      draggable: true,
-    }).addTo(map);
-    marker.bindPopup('LatLng Marker').openPopup();
-    marker.on('dragend', function(e) {
-      marker.getPopup().setContent(marker.getLatLng().toString()).openOn(map);
-    });
+    // let marker = L.marker([-50, 50], {
+    //   draggable: true,
+    // }).addTo(map);
+    // marker.bindPopup('LatLng Marker').openPopup();
+    // marker.on('dragend', function(e) {
+    //   marker.getPopup().setContent(marker.getLatLng().toString()).openOn(map);
+    // });
 
     // Create marker groups
     let groups = {};
