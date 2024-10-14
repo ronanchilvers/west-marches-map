@@ -7,16 +7,16 @@ const markerLayers = {
         name: "Cities and City Ports",
         visible: true,
     },
+    ports: {
+        name: "Independent Ports",
+        visible: true,
+    },
     towns: {
         name: "Market Towns",
         visible: true,
     },
     villages: {
         name: "Villages",
-        visible: true,
-    },
-    ports: {
-        name: "Independent Ports",
         visible: true,
     },
 }
