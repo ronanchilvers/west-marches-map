@@ -19,8 +19,8 @@ document.addEventListener("DOMContentLoaded",function(){
     L.control.graphicScale({
       fill: "double",
       doubleLine: true,
-      showSubunits: true,
-      unitPlacement: "label",
+      // showSubunits: true,
+      unitPlacement: "scale",
       position: "bottomright",
       getDisplayUnit: fnDisplayUnit,
       getUnitConversionFactor: fnUnitConversionFactor,
