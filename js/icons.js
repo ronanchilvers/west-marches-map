@@ -10,14 +10,14 @@ document.addEventListener("DOMContentLoaded",function(){
         cities: {
             file: "city.png",
         },
+        ports: {
+            file: "cityPort.png",
+        },
         towns: {
             file: "town.png",
         },
         villages: {
             file: "townHalflings.png",
-        },
-        ports: {
-            file: "cityPort.png",
         },
     }
 
