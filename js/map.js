@@ -107,7 +107,8 @@ document.addEventListener("DOMContentLoaded",function(){
     }
     layers.addTo(map);
 
-    map.setView([-50,46], 4);
-    var mapSW = [-112,0], mapNE = [0,103];
+    let mapSW = [-112,0],
+        mapNE = [0,103];
     map.setMaxBounds(new L.LatLngBounds(mapSW, mapNE));
+    map.setView([-50,46], 4);
 });
