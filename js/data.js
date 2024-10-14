@@ -1,4 +1,8 @@
 const markerLayers = {
+    stars: {
+        name: "Starred Locations",
+        visible: true,
+    },
     cities: {
         name: "Large Cities or City Ports",
         visible: true,
@@ -23,11 +27,10 @@ const markerData = {
         pos: [-47.3,44.75],
         label: "Kaer Artifakt",
         type: null,
-        icon: "star",
+        icon: "stars",
         tooltip: true,
     },
 
-    // Ports
     "osterholm": {
         pos: [-49.8,38.12],
         label: "Osterholm",
@@ -68,8 +71,6 @@ const markerData = {
         label: "Moorhome",
         type: "villages"
     },
-
-    // cities
     "vilhof": {
         pos: [-37.6, 47.5],
         label: "Vilhof Stedding",
@@ -84,5 +85,15 @@ const markerData = {
         pos: [-40.85, 30.68],
         label: "Daletown",
         type: "towns"
+    },
+    "slycross": {
+        pos: [-47.75, 39.5],
+        label: "Slycross",
+        type: "villages"
+    },
+    "brassen": {
+        pos: [-48.85, 41.98],
+        label: "Brassen",
+        type: "villages"
     },
 }

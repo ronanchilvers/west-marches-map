@@ -18,6 +18,18 @@ document.addEventListener("DOMContentLoaded",function(){
            ],
            size: "large",
         },
+        "Blackstone Mountains": {
+           points: [
+            [-38.75, 57.81],
+            [-43, 57.87],
+            [-47.25, 60],
+            [-50.75, 63.75],
+            [-53.25, 67.37],
+            [-55.12, 72.31],
+            [-57, 76.68],
+           ],
+           size: "large",
+        },
         "Bitterroot": {
            points: [
             [-40.03, 43.5],
@@ -32,6 +44,13 @@ document.addEventListener("DOMContentLoaded",function(){
             [-42.6, 44.2],
            ],
            size: "medium",
+        },
+        "Canthus Steppe": {
+           points: [
+            [-57.9, 34.54],
+            [-51.45, 36.76],
+           ],
+           size: "small",
         },
         "River Karna": {
            points: [
@@ -113,6 +132,17 @@ document.addEventListener("DOMContentLoaded",function(){
             [-53.9, 45.15],
             [-53.56, 48.15],
             [-54.4, 51.12],
+           ],
+           size: "large",
+        },
+        "Lake Pasree": {
+           points: [
+            [-70.43, 52.31],
+            [-71.25, 55.28],
+            [-70.03, 57],
+            [-68.59, 58.12],
+            [-67.96, 60.43],
+            [-68.43, 62.81],
            ],
            size: "large",
         },

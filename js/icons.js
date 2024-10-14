@@ -1,7 +1,7 @@
 let icons = {};
 document.addEventListener("DOMContentLoaded",function(){
     const iconData = {
-        star: {
+        stars: {
             file: "cityCapital.png",
         },
         cities: {
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded",function(){
             file: "town.png",
         },
         villages: {
-            file: "townDock.png",
+            file: "townHalflings.png",
         },
         ports: {
             file: "cityPort.png",
@@ -30,5 +30,6 @@ document.addEventListener("DOMContentLoaded",function(){
             tooltipAnchor: [16,-28],
             shadowSize: [41,41],
         });
+        console.log(icons[key]);
     }
 });

@@ -16,6 +16,8 @@ document.addEventListener("DOMContentLoaded",function(){
     let fnUnitConversionFactor = (meters) => (
      ((meters * 0.00062137 >= 25) ? 0.00062137 : 3.28084)/10
     )
+
+    // Controls and tools
     L.control.graphicScale({
       fill: "double",
       doubleLine: true,
@@ -30,6 +32,25 @@ document.addEventListener("DOMContentLoaded",function(){
       title: "Reset View",
       latlng: L.latLng([-50,46]),
       zoom: 4,
+    }).addTo(map);
+
+    // Build legends
+    let legends = [];
+    for (const key in icons) {
+      let deets = markerLayers[key];
+      let icon = icons[key];
+      legends.push({
+        label: deets["name"],
+        type: "image",
+        url: icon.options.iconUrl
+      });
+    }
+    L.control.Legend({
+      position: "topright",
+      legends: legends,
+      symbolWidth: 35,
+      symbolHeight: 41,
+      opacity: 0.75,
     }).addTo(map);
 
     //Coordinate Finder
