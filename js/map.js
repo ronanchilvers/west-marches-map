@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded",function(){
       amount: value,
     });
     let fnUnitConversionFactor = (meters) => (
-     ((meters * 0.00062137 >= 25) ? 0.00062137 : 3.28084)/8
+     ((meters * 0.00062137 >= 25) ? 0.00062137 : 3.28084)/10
     )
     L.control.graphicScale({
       fill: "double",
