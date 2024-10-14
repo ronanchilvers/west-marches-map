@@ -34,34 +34,14 @@ document.addEventListener("DOMContentLoaded",function(){
       zoom: 4,
     }).addTo(map);
 
-    // Build legends
-    let legends = [];
-    for (const key in icons) {
-      let deets = markerLayers[key];
-      let icon = icons[key];
-      legends.push({
-        label: deets["name"],
-        type: "image",
-        url: icon.options.iconUrl
-      });
-    }
-    L.control.Legend({
-      position: "topright",
-      legends: legends,
-      symbolWidth: 35,
-      symbolHeight: 41,
-      opacity: 0.75,
-      collapsed: true,
-    }).addTo(map);
-
     //Coordinate Finder
-    // let marker = L.marker([-50, 50], {
-    //   draggable: true,
-    // }).addTo(map);
-    // marker.bindPopup('LatLng Marker').openPopup();
-    // marker.on('dragend', function(e) {
-    //   marker.getPopup().setContent(marker.getLatLng().toString()).openOn(map);
-    // });
+    let marker = L.marker([-50, 50], {
+      draggable: true,
+    }).addTo(map);
+    marker.bindPopup('LatLng Marker').openPopup();
+    marker.on('dragend', function(e) {
+      marker.getPopup().setContent(marker.getLatLng().toString()).openOn(map);
+    });
 
     // Create marker groups
     let groups = {};
@@ -70,17 +50,14 @@ document.addEventListener("DOMContentLoaded",function(){
     }
 
     // Place markers
-    // let markers = new Map();
     for (const key in markerData) {
         let deets = markerData[key];
         let opts = {};
-        // console.log(key, deets);
         if (deets["icon"]) {
           opts["icon"] = icons[deets["icon"]]
         } else if (deets["type"]) {
           opts["icon"] = icons[deets["type"]]
         }
-        // console.log(opts);
         if (deets["type"] == null) {
           L.marker(deets["pos"], opts)
             .bindPopup(deets["label"])
@@ -94,19 +71,50 @@ document.addEventListener("DOMContentLoaded",function(){
     }
 
     // Create the layer groups
-    let layers = L.control.layers();
+    // let layers = L.control.layers();
+    let layerGroups = {};
     for (const key in groups) {
       let markerLayerData = markerLayers[key];
       let layerGroup = L.layerGroup(groups[key]);
-      layers.addOverlay(
-        layerGroup,
-        markerLayerData["name"]
-      );
+      // layers.addOverlay(
+      //   layerGroup,
+      //   markerLayerData["name"]
+      // );
+      layerGroups[key] = layerGroup;
       if (markerLayerData["visible"]) {
         layerGroup.addTo(map);
       }
     }
-    layers.addTo(map);
+    // layers.addTo(map);
+
+    // Build legends
+    let legends = [];
+    for (const key in icons) {
+      let deets = markerLayers[key];
+      let icon = icons[key];
+      let layerGroup = null;
+      if (!deets) {
+        continue;
+      }
+      if (layerGroups[key]) {
+        layerGroup = layerGroups[key];
+      }
+      legends.push({
+        label: deets["name"],
+        type: "image",
+        url: icon.options.iconUrl,
+        layers: layerGroup,
+      });
+    }
+    L.control.Legend({
+      position: "topright",
+      title: "Marker Legend",
+      legends: legends,
+      symbolWidth: 35,
+      symbolHeight: 41,
+      opacity: 0.75,
+      collapsed: true,
+    }).addTo(map);
 
     let mapSW = [-112,0],
         mapNE = [0,103];

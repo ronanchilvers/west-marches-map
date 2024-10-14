@@ -1,8 +1,11 @@
 let icons = {};
 document.addEventListener("DOMContentLoaded",function(){
     const iconData = {
-        stars: {
+        star: {
             file: "cityCapital.png",
+        },
+        kaers: {
+            file: "mageTower.png",
         },
         cities: {
             file: "city.png",
@@ -30,6 +33,5 @@ document.addEventListener("DOMContentLoaded",function(){
             tooltipAnchor: [16,-28],
             shadowSize: [41,41],
         });
-        console.log(icons[key]);
     }
 });

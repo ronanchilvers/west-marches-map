@@ -1,10 +1,10 @@
 const markerLayers = {
-    stars: {
-        name: "Starred Locations",
+    kaers: {
+        name: "Kaers",
         visible: true,
     },
     cities: {
-        name: "Large Cities or City Ports",
+        name: "Cities and City Ports",
         visible: true,
     },
     towns: {
@@ -16,18 +16,30 @@ const markerLayers = {
         visible: true,
     },
     ports: {
-        name: "Large Ports",
+        name: "Independent Ports",
         visible: true,
     },
-    // landscape: "Landscape Features",
 }
 const markerData = {
-    // Key features
-    "ka": {
+    "artifakt": {
         pos: [-47.3,44.75],
         label: "Kaer Artifakt",
-        type: null,
-        icon: "stars",
+        type: "kaers",
+        icon: "star",
+        tooltip: true,
+    },
+    "bhathag": {
+        pos: [-12.93,32.81],
+        label: "Kaer Bhathag",
+        type: "kaers",
+        icon: "kaers",
+        tooltip: true,
+    },
+    "ravilious": {
+        pos: [-92.18,47.37],
+        label: "Kaer Ravilious",
+        type: "kaers",
+        icon: "kaers",
         tooltip: true,
     },
 
