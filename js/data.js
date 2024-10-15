@@ -88,6 +88,11 @@ const markerData = {
         label: "Vilhof Stedding",
         type: "villages"
     },
+    "briarhollow": {
+        pos: [-41.76, 44.81],
+        label: "Briarhollow",
+        type: "villages"
+    },
     "dirsam": {
         pos: [-53.73, 28.39],
         label: "Dirsam",

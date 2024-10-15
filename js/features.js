@@ -146,6 +146,16 @@ document.addEventListener("DOMContentLoaded",function(){
            ],
            size: "large",
         },
+        "The Evergloom": {
+           points: [
+            [-58.75, 25.68],
+            [-55.81, 25.46],
+            [-52.75, 25.90],
+            [-50.12, 27.25],
+            [-48.09, 29],
+           ],
+           size: "large",
+        },
     }
 
     // Create polylines
