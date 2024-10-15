@@ -153,27 +153,27 @@ L.Control.GraphicScale = L.Control.extend({
         return itemLbl;
     },
 
-    // _update: function () {
-    //     var mapScale = Math.pow(2, this._map.getZoom()) / Math.pow(2, this._map.getMaxZoom()),
-    //         dist = this.options.unitsPer1000px / mapScale;
-
-    //     this._updateScale(dist, this.options);
-    // },
     _update: function () {
-        var bounds = this._map.getBounds(),
-            centerLat = bounds.getCenter().lat,
-            //length of an half world arc at current lat
-            halfWorldMeters = 6378137 * Math.PI * Math.cos(centerLat * Math.PI / 180),
-            //length of this arc from map left to map right
-            dist = halfWorldMeters * (bounds.getNorthEast().lng - bounds.getSouthWest().lng) / 180,
-            size = this._map.getSize();
+        var mapScale = Math.pow(2, this._map.getZoom()) / Math.pow(2, this._map.getMaxZoom()),
+            dist = (1000 / mapScale)/2.6;
 
-        if (size.x > 0) {
-            this._updateScale(dist, this.options);
-        }
-
-
+        this._updateScale(dist, this.options);
     },
+    // _update: function () {
+    //     var bounds = this._map.getBounds(),
+    //         centerLat = bounds.getCenter().lat,
+    //         //length of an half world arc at current lat
+    //         halfWorldMeters = 6378137 * Math.PI * Math.cos(centerLat * Math.PI / 180),
+    //         //length of this arc from map left to map right
+    //         dist = halfWorldMeters * (bounds.getNorthEast().lng - bounds.getSouthWest().lng) / 180,
+    //         size = this._map.getSize();
+
+    //     if (size.x > 0) {
+    //         this._updateScale(dist, this.options);
+    //     }
+
+
+    // },
 
     _updateScale: function(maxMeters, options) {
 
