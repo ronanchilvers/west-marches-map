@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded",function(){
       continuousWorld: false,
       noWrap: true,
       minZoom: 4,
-      maxZoom: 6,
+      maxZoom: 7,
     }).addTo(map);
 
     // Add the scale bar
