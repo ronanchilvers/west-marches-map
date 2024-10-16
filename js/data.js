@@ -17,7 +17,11 @@ const markerLayers = {
     },
     villages: {
         name: "Villages",
-        visible: true,
+        zoom_threshold: 5,
+    },
+    other: {
+        name: "Camps and other features",
+        zoom_threshold: 6,
     },
 }
 const markerData = {
@@ -112,5 +116,17 @@ const markerData = {
         pos: [-48.85, 41.98],
         label: "Brassen",
         type: "villages"
+    },
+
+    // Other stuff
+    "kaercamp": {
+        pos: [-47.4, 44.6],
+        label: "Logging Camp",
+        type: "other"
+    },
+    "spiggotsmill": {
+        pos: [-42.5, 47.03],
+        label: "Spiggot's Mill",
+        type: "other"
     },
 }

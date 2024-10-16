@@ -71,21 +71,18 @@ document.addEventListener("DOMContentLoaded",function(){
     }
 
     // Create the layer groups
-    // let layers = L.control.layers();
     let layerGroups = {};
+    let zoomManager = L.control.zoomManager().bind(map);
     for (const key in groups) {
       let markerLayerData = markerLayers[key];
       let layerGroup = L.layerGroup(groups[key]);
-      // layers.addOverlay(
-      //   layerGroup,
-      //   markerLayerData["name"]
-      // );
       layerGroups[key] = layerGroup;
-      if (markerLayerData["visible"]) {
+      if (markerLayerData["visible"] && true === markerLayerData["visible"]) {
         layerGroup.addTo(map);
+      } else if (markerLayerData["zoom_threshold"]) {
+        zoomManager.pushLayer(key, layerGroup, markerLayerData["zoom_threshold"]);
       }
     }
-    // layers.addTo(map);
 
     // Build legends
     let legends = [];
@@ -103,7 +100,8 @@ document.addEventListener("DOMContentLoaded",function(){
         label: deets["name"],
         type: "image",
         url: icon.options.iconUrl,
-        layers: layerGroup,
+        // layers: layerGroup,
+        // inactive: (deets["visible"] && true === deets["visible"]) ? false : true,
       });
     }
     L.control.Legend({
