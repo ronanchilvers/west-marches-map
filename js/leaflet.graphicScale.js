@@ -155,7 +155,7 @@ L.Control.GraphicScale = L.Control.extend({
 
     _update: function () {
         var mapScale = Math.pow(2, this._map.getZoom()) / Math.pow(2, this._map.getMaxZoom()),
-            dist = (1000 / mapScale)/2.6;
+            dist = (1000 / mapScale)/4;
 
         this._updateScale(dist, this.options);
     },
