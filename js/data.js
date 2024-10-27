@@ -161,8 +161,8 @@ const markerData = {
     },
 
     // Other stuff
-    "kaercamp": {
-        pos: [-47.4, 44.6],
+    "loggingcamp": {
+        pos: [-47.3, 44.55],
         label: "Logging Camp",
         type: "other"
     },
