@@ -166,6 +166,16 @@ document.addEventListener("DOMContentLoaded",function(){
            ],
            size: "large",
         },
+        "The Claws": {
+           points: [
+            [-17.87, 21.18],
+            [-15.43, 28.06],
+            [-15.25, 35],
+            [-19.81, 44.81],
+            [-24.93, 48.37],
+           ],
+           size: "large",
+        },
         "Mount Olos": {
            points: [
             [-72.87, 61.68],
