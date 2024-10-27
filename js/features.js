@@ -154,7 +154,27 @@ document.addEventListener("DOMContentLoaded",function(){
             [-50.12, 27.25],
             [-48.09, 29],
            ],
+           size: "medium",
+        },
+        "Senna Mountains": {
+           points: [
+            [-71.25, 30.68],
+            [-76.43, 29],
+            [-84, 29.31],
+            [-88.06, 32.18],
+            [-91.18, 40.68],
+           ],
            size: "large",
+        },
+        "Mount Olos": {
+           points: [
+            [-72.87, 61.68],
+            [-75.14, 62.98],
+            [-76.73, 64.48],
+            [-78.23, 67.07],
+            [-79.34, 69.70],
+           ],
+           size: "small",
         },
     }
 

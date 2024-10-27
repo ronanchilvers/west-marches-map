@@ -4,27 +4,29 @@ const markerLayers = {
         visible: true,
     },
     cities: {
-        name: "Cities and City Ports",
+        name: "Large Cities and City Ports (pop > 8,000)",
         visible: true,
     },
     ports: {
-        name: "Independent Ports",
+        name: "Large Ports (pop < 8,000)",
         visible: true,
     },
     towns: {
-        name: "Market Towns",
-        visible: true,
-    },
-    villages: {
-        name: "Villages",
+        name: "Towns (pop < 3,000)",
         zoom_threshold: 5,
     },
-    other: {
-        name: "Camps and other features",
+    villages: {
+        name: "Villages (pop < 1,000)",
         zoom_threshold: 6,
+    },
+    other: {
+        name: "Other features",
+        zoom_threshold: 7,
     },
 }
 const markerData = {
+
+    // Kaers
     "artifakt": {
         pos: [-47.3,44.75],
         label: "Kaer Artifakt",
@@ -47,6 +49,7 @@ const markerData = {
         tooltip: true,
     },
 
+    // Ports and cities
     "osterholm": {
         pos: [-49.8,38.12],
         label: "Osterholm",
@@ -62,6 +65,8 @@ const markerData = {
         label: "Canth",
         type: "ports"
     },
+
+    // Towns
     "carm": {
         pos: [-52.04, 48.79],
         label: "Carm",
@@ -72,6 +77,28 @@ const markerData = {
         label: "Kalathon",
         type: "towns"
     },
+    "dirsam": {
+        pos: [-53.73, 28.39],
+        label: "Dirsam",
+        type: "towns"
+    },
+    "daletown": {
+        pos: [-40.85, 30.68],
+        label: "Daletown",
+        type: "towns"
+    },
+    "halvikhead": {
+        pos: [-55.43, 49.31],
+        label: "Halviks Head",
+        type: "towns"
+    },
+    "reemen": {
+        pos: [-69.65, 54.35],
+        label: "Reemen",
+        type: "towns"
+    },
+
+    // Villages
     "wickledroth": {
         pos: [-63.76, 32.39],
         label: "Wickledroth",
@@ -97,16 +124,6 @@ const markerData = {
         label: "Briarhollow",
         type: "villages"
     },
-    "dirsam": {
-        pos: [-53.73, 28.39],
-        label: "Dirsam",
-        type: "towns"
-    },
-    "daletown": {
-        pos: [-40.85, 30.68],
-        label: "Daletown",
-        type: "towns"
-    },
     "slycross": {
         pos: [-47.75, 39.5],
         label: "Slycross",
@@ -117,6 +134,31 @@ const markerData = {
         label: "Brassen",
         type: "villages"
     },
+    "lakeside": {
+        pos: [-49.92, 39.81],
+        label: "Lakeside",
+        type: "villages"
+    },
+    "kellis": {
+        pos: [-52.41, 39.53],
+        label: "Kellis",
+        type: "villages"
+    },
+    "sarrasand": {
+        pos: [-51.98, 43.61],
+        label: "Sarrasand",
+        type: "villages"
+    },
+    "stenhof": {
+        pos: [-38.64, 56.85],
+        label: "Stenhof stedding",
+        type: "villages"
+    },
+    "douhof": {
+        pos: [-72.12, 41.78],
+        label: "Douhof stedding",
+        type: "villages"
+    },
 
     // Other stuff
     "kaercamp": {
@@ -125,8 +167,13 @@ const markerData = {
         type: "other"
     },
     "spiggotsmill": {
-        pos: [-42.5, 47.03],
+        pos: [-43.61, 46.79],
         label: "Spiggot's Mill",
+        type: "other"
+    },
+    "songhallow": {
+        pos: [-46.96, 41.22],
+        label: "Song Hallow",
         type: "other"
     },
 }
