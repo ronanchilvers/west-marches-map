@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded",function(){
     L.tileLayer('tiles/{z}/{x}-{y}.jpg', {
       continuousWorld: false,
       noWrap: true,
-      minZoom: 4,
+      minZoom: 3,
       maxZoom: 7,
     }).addTo(map);
 
@@ -117,5 +117,5 @@ document.addEventListener("DOMContentLoaded",function(){
     let mapSW = [-112,0],
         mapNE = [0,103];
     map.setMaxBounds(new L.LatLngBounds(mapSW, mapNE));
-    map.setView([-50,46], 4);
+    map.setView([-50,46], 3);
 });
