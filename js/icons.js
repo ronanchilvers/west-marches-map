@@ -19,6 +19,9 @@ document.addEventListener("DOMContentLoaded",function(){
         villages: {
             file: "townHalflings.png",
         },
+        discovery: {
+            file: "templeMonolith.png",
+        },
         other: {
             file: "tradeCamp.png",
         },

@@ -19,6 +19,10 @@ const markerLayers = {
         name: "Villages (pop < 1,000)",
         zoom_threshold: 6,
     },
+    discovery: {
+        name: "Discoveries",
+        zoom_threshold: 5,
+    },
     other: {
         name: "Other features",
         zoom_threshold: 7,
@@ -175,5 +179,12 @@ const markerData = {
         pos: [-46.96, 41.22],
         label: "Song Hallow",
         type: "other"
+    },
+
+    // Discoveries
+    "spread-wing-pillar": {
+        pos: [-45.51, 45.60],
+        label: "Pillar of Spread Wings",
+        type: "discovery"
     },
 }
