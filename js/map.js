@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded",function(){
       position: "topleft",
       title: "Reset View",
       latlng: L.latLng([-50,46]),
-      zoom: 4,
+      zoom: 5,
     }).addTo(map);
 
     //Coordinate Finder
@@ -117,5 +117,5 @@ document.addEventListener("DOMContentLoaded",function(){
     let mapSW = [-112,0],
         mapNE = [0,103];
     map.setMaxBounds(new L.LatLngBounds(mapSW, mapNE));
-    map.setView([-50,46], 4);
+    map.setView([-50,46], 5);
 });
