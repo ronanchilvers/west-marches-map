@@ -123,9 +123,9 @@ const markerData = {
         label: "Vilhof Stedding",
         type: "villages"
     },
-    "briarhollow": {
+    "briarwood": {
         pos: [-41.76, 44.81],
-        label: "Briarhollow",
+        label: "Briarwood",
         type: "villages"
     },
     "slycross": {
