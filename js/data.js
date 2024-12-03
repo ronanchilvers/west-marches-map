@@ -21,7 +21,7 @@ const markerLayers = {
     },
     discovery: {
         name: "Discoveries",
-        zoom_threshold: 5,
+        zoom_threshold: 6,
     },
     other: {
         name: "Other features",
@@ -187,4 +187,24 @@ const markerData = {
         label: "Pillar of Spread Wings",
         type: "discovery"
     },
+    "outcropping-camp": {
+        pos: [-46.59, 42.71],
+        label: "Shelter beneath rocky outcrop",
+        type: "discovery"
+    },
+    "songhallow-campsite": {
+        pos: [-47.0, 41.28],
+        label: "Good camping on the edge of Song Hallow",
+        type: "discovery"
+    },
+    "morrigans-ruined-altar": {
+        pos: [-43.54, 45.46],
+        label: "Ruined altar to the Morrigan",
+        type: "discovery"
+    },
+    "swampland": {
+        pos: [-44.52, 45.16],
+        label: "Swamp land and skrell",
+        type: "discovery"
+    }
 }
