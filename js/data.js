@@ -202,6 +202,16 @@ const markerData = {
         label: "Ruined altar to the Morrigan",
         type: "discovery"
     },
+    "ruined-homestead": {
+        pos: [-42.515625, 45.40625],
+        label: "Ruined homestead",
+        type: "discovery"
+    },
+    "spider-lair": {
+        pos: [-48.085937, 42.0625],
+        label: "Phase spider lair",
+        type: "discovery"
+    },
     "swampland": {
         pos: [-44.52, 45.16],
         label: "Swamp land and skrell",
