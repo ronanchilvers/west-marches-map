@@ -216,5 +216,10 @@ const markerData = {
         pos: [-44.52, 45.16],
         label: "Swamp land and skrell",
         type: "discovery"
+    },
+    "sinkhole-near-brassen": {
+        pos: [-48.609375, 42.085938],
+        label: "Ettercap Sinkhole and Ruin",
+        type: "discovery"
     }
 }
