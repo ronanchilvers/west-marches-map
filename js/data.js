@@ -125,7 +125,7 @@ const markerData = {
     },
     "briarwood": {
         pos: [-41.76, 44.81],
-        label: "Briarwood",
+        label: "Stonegrasp (was Briarwood), The Palm and The Stacks",
         type: "villages"
     },
     "slycross": {
