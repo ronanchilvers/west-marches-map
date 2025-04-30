@@ -120,7 +120,7 @@ const markerData = {
     },
     "vilhof": {
         pos: [-37.6, 47.5],
-        label: "Vilhof Stedding",
+        label: "Vilhof Stedding - potential lair of Crodan Nekros",
         type: "villages"
     },
     "briarwood": {
@@ -155,7 +155,7 @@ const markerData = {
     },
     "stenhof": {
         pos: [-38.64, 56.85],
-        label: "Stenhof stedding",
+        label: "Stenhof stedding - home of Boraal and Kresh",
         type: "villages"
     },
     "douhof": {
@@ -220,6 +220,21 @@ const markerData = {
     "sinkhole-near-brassen": {
         pos: [-48.609375, 42.085938],
         label: "Ettercap Sinkhole and Ruin",
+        type: "discovery"
+    },
+    "killians-camp": {
+        pos: [ -36.9375, 38.234375 ],
+        label: "Approximate location of Killian's Settlement",
+        type: "discovery"
+    },
+    "significant-upheaval": {
+        pos: [-50.804687, 44.335938],
+        label: "Site of potential bioeruptive subsidence and subductive collapse",
+        type: "discovery"
+    },
+    "arcanoclastic-shear": {
+        pos: [-48.601562, 44.421875],
+        label: "Site of potential arcanoclastic shearing",
         type: "discovery"
     }
 }
