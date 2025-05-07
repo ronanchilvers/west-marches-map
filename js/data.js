@@ -163,6 +163,11 @@ const markerData = {
         label: "Douhof stedding",
         type: "villages"
     },
+    "Lundy": {
+        pos: [-45.835937, 48.90625],
+        label: "Lundy",
+        type: "villages"
+    },
 
     // Other stuff
     "loggingcamp": {
@@ -185,6 +190,16 @@ const markerData = {
     "spread-wing-pillar": {
         pos: [-45.51, 45.60],
         label: "Pillar of Spread Wings",
+        type: "discovery"
+    },
+    "black-pillar-1": {
+        pos: [-46.46875, 46.796875],
+        label: "Black Pillar",
+        type: "discovery"
+    },
+    "black-pillar-2": {
+        pos: [-47.8125, 47.28125],
+        label: "Black Pillar",
         type: "discovery"
     },
     "outcropping-camp": {
