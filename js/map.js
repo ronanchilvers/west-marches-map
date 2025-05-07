@@ -35,9 +35,9 @@ document.addEventListener("DOMContentLoaded",function(){
     }).addTo(map);
 
     //Coordinate Finder
-    // let marker = L.marker([-49, 45], {
-    //   draggable: true,
-    // }).addTo(map);
+    let marker = L.marker([-47.351562, 44.882813], {
+      draggable: true,
+    }).addTo(map);
     // marker.bindPopup('LatLng Marker').openPopup();
     // marker.on('dragend', function(e) {
     //   marker.getPopup().setContent(marker.getLatLng().toString()).openOn(map);
